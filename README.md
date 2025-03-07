@@ -132,7 +132,7 @@ private $routes = [
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
-Your Name - your.email@example.com
+<!-- Your Name - your.email@example.com -->
 
 Project Link: [https://github.com/awanicaleb/php-mvc](https://github.com/awanicaleb/php-mvc)
 ```
