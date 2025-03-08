@@ -1,6 +1,4 @@
 <?php
-
-
 // Core configuration and autoloading
 require_once '../config/config.php';
 require_once '../config/database.php';
@@ -33,10 +31,17 @@ class Router {
     public function dispatch($uri) {
         // Remove query string and trim slashes
         $uri = strtok($uri, '?');
+        
+        // Extract the path after /php-mvc/public/
+        $baseDir = '/php-mvc/public/';
+        if (strpos($uri, $baseDir) === 0) {
+            $uri = substr($uri, strlen($baseDir));
+        }
+        
         $uri = trim($uri, '/');
         
         // Default to home if no route specified
-        $uri = $uri ?: 'home';
+        $uri = $uri ?: '';
 
         // Check if route exists
         if (!isset($this->routes[$uri])) {
