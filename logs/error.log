@@ -1,0 +1,2 @@
+[07-Mar-2025 17:15:43 Europe/Berlin] PHP Warning:  include(../src/Views/404.view.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-mvc\public\index.php on line 45
+[07-Mar-2025 17:15:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../src/Views/404.view.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\php-mvc\public\index.php on line 45
