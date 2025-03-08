@@ -42,7 +42,7 @@ class Router {
         if (!isset($this->routes[$uri])) {
             // 404 handling
             http_response_code(404);
-            include '../src/Views/404.view.php';
+            include __DIR__ . '/../src/Views/404.view.php';
             exit;
         }
 
