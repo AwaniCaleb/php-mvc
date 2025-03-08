@@ -54,10 +54,10 @@ class BaseController {
         extract($data);
         
         // Include header
-        require_once '../src/includes/header.php';
+        require_once '../app/includes/header.php';
         
         // Include specific view
-        $viewPath = "../src/Views/{$viewName}.view.php";
+        $viewPath = "../app/Views/{$viewName}.view.php";
         if (file_exists($viewPath)) {
             require_once $viewPath;
         } else {
@@ -66,7 +66,7 @@ class BaseController {
         }
         
         // Include footer
-        require_once '../src/includes/footer.php';
+        require_once '../app/includes/footer.php';
     }
     
     /**

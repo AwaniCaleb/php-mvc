@@ -1,8 +1,8 @@
-[07-Mar-2025 17:15:43 Europe/Berlin] PHP Warning:  include(../src/Views/404.view.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-mvc\public\index.php on line 45
-[07-Mar-2025 17:15:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../src/Views/404.view.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\php-mvc\public\index.php on line 45
-[08-Mar-2025 03:29:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to private Database::__construct() from scope BaseController in C:\xampp\htdocs\php-mvc\src\Controllers\BaseController.php:19
+[07-Mar-2025 17:15:43 Europe/Berlin] PHP Warning:  include(../app/Views/404.view.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-mvc\public\index.php on line 45
+[07-Mar-2025 17:15:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../app/Views/404.view.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\php-mvc\public\index.php on line 45
+[08-Mar-2025 03:29:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to private Database::__construct() from scope BaseController in C:\xampp\htdocs\php-mvc\app\Controllers\BaseController.php:19
 Stack trace:
 #0 C:\xampp\htdocs\php-mvc\public\index.php(58): BaseController->__construct()
 #1 C:\xampp\htdocs\php-mvc\public\index.php(65): Router->dispatch('')
 #2 {main}
-  thrown in C:\xampp\htdocs\php-mvc\src\Controllers\BaseController.php on line 19
+  thrown in C:\xampp\htdocs\php-mvc\app\Controllers\BaseController.php on line 19

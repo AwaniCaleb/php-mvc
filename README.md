@@ -22,7 +22,7 @@ This is a lightweight, secure PHP website template using a simple MVC (Model-Vie
 php-mvc/
 ├── config/           # Configuration files
 ├── public/           # Web entry point
-├── src/              # Application source code
+├── app/              # Application source code
 │   ├── Controllers/  # Page logic
 │   ├── Models/       # Database interactions
 │   └── Views/        # Page templates
@@ -71,7 +71,7 @@ chmod -R 777 logs/
 ## Adding New Pages
 
 ### 1. Create Controller
-In `src/Controllers/`, create a new controller:
+In `app/Controllers/`, create a new controller:
 ```php
 <?php
 class YourPageController extends BaseController {
@@ -84,7 +84,7 @@ class YourPageController extends BaseController {
 ```
 
 ### 2. Create View
-In `src/Views/`, create `your-page.view.php`:
+In `app/Views/`, create `your-page.view.php`:
 ```php
 <div class="container">
     <h1><?= htmlspecialchars($title) ?></h1>

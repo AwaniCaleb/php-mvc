@@ -6,8 +6,8 @@ require_once '../config/database.php';
 // Simple autoloader
 spl_autoload_register(function($class) {
     $prefixes = [
-        '../src/Controllers/',
-        '../src/Models/'
+        '../app/Controllers/',
+        '../app/Models/'
     ];
     
     foreach ($prefixes as $prefix) {
@@ -47,7 +47,7 @@ class Router {
         if (!isset($this->routes[$uri])) {
             // 404 handling
             http_response_code(404);
-            include __DIR__ . '/../src/Views/404.view.php';
+            include __DIR__ . '/../app/Views/404.view.php';
             exit;
         }
 
