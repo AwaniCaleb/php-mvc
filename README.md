@@ -144,6 +144,6 @@ If you encounter any problems, please open an issue on GitHub with:
 - Steps to reproduce
 
 ## Recommended Tools
-- [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [PHP CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer)
 - [PHPUnit](https://phpunit.de/)
 - [Composer](https://getcomposer.org/)
